@@ -16,7 +16,6 @@ goes_measurement: AOD reading from GOES R
 
 
 ### References
---
 1. United States Environmental Protection Agency | US EPA (https://www.epa.gov).
 2. Air Quality System (AQS) API (https://aqs.epa.gov/aqsweb/documents/data_api.html)
 3. Pre-Labeled Datasets for Air Quality Data (https://github.com/nasa/spaceapps-phenomena_detection/tree/dev/data/labeled)
