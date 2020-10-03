@@ -62,18 +62,18 @@ main {
     letter-spacing: 0.3ch;
 }
 
+.logo-img {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 0.75rem;
+}
+
 .nav-logo {
     display: flex;
     align-items: center;
     height: 3.5rem;
     color: var(--text-primary);
     text-decoration: none;
-}
-
-.nav-logo img {
-    width: 2.5rem;
-    min-width: 2.5rem;
-    margin: 0 0.5rem;
 }
 
 .nav-item {
@@ -91,32 +91,87 @@ main {
     margin-top: auto;
 }
 
-.nav-link {
-    display: flex;
-    align-items: center;
-    height: 3.5rem;
-    color: var(--text-primary);
-    text-decoration: none;
-    filter: grayscale(100%) opacity(0.7);
-    transition: var(--transition-speed);
-  }
-
-.nav-link:hover {
-    filter: grayscale(0%) opacity(1);
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
-}
-
 .link-text {
     display: none;
     margin-left: 1rem;
     color: black;
 }
 
-.navbar:hover {
-    width: 16rem;
+/* small screen*/
+@media only screen and (max-width: 600px){
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: 3rem;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-item {
+        height: 1.5rem;
+    }
+
+    .nav-item:last-child{
+        margin-top: 0;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    main{
+        margin: 0;
+    }
+
 }
 
-.navbar:hover .link-text {
-    display: block;
+@media (hover: none) {
+    a:hover { color: inherit; }
+  }
+
+/* large screen*/
+@media only screen and (min-width: 600px){
+    .navbar{
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover{
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text{
+        display: inline;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        height: 3.5rem;
+        color: var(--text-primary);
+        text-decoration: none;
+        filter: grayscale(100%) opacity(0.7);
+        transition: var(--transition-speed);
+    }
+
+    .nav-link:hover {
+        filter: grayscale(0%) opacity(1);
+        background: var(--bg-secondary);
+        color: var(--text-secondary);
+    }
+    
+    .navbar:hover {
+        width: 16rem;
+    }
+    
+    .navbar:hover .link-text {
+        display: block;
+    }
 }
