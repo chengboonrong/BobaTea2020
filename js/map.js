@@ -31,7 +31,7 @@
 			 .style("opacity", 0);
 
  // Load in my states data!
- d3.csv("latest_PM2.5_dataset.csv", function(data) {
+ d3.csv("../latest_PM2.5_dataset.csv", function(data) {
 	 color.domain([0,1,2,3,4,5]); // setting the range of the input data
 
 	 // Load GeoJSON data and merge with states data
