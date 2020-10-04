@@ -16,7 +16,7 @@
  var color = d3.scale.linear()
 			 .range(["green", "yellow", "orange", "red", "purple", "maroon"]);
 
- var legendText = ["Good", "Moderate", "Unhealthy for Sensitive Groups", "Unhealthy", "Very Unhealthy", "Hazardous"];
+ var legendText = ["Good: 1 - 50", "Moderate: 51 - 100", "Unhealthy for Sensitive Groups: 101 - 150", "Unhealthy: 151 - 200", "Very Unhealthy: 201 - 300", "Hazardous: 300+"];
 
  //Create SVG element and append map to the SVG
  var svg = d3.select("body")
