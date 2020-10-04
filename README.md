@@ -19,7 +19,7 @@ aws s3 cp s3://impact-datashare/pm2.5-labeled <directory_path-to-save> --recursi
 
 
 ### Website Homepage
-![](bobatea_homepage)
+![HomePage](https://github.com/YuLiangGoh/BobaTea2020/blob/main/bobatea_homepage.png)
 
 ### References
 1. United States Environmental Protection Agency | US EPA (https://www.epa.gov).
