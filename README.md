@@ -17,6 +17,10 @@ aws s3 cp s3://impact-datashare/pm2.5-labeled <directory_path-to-save> --recursi
 8. goes_measurement: AOD reading from GOES R
 
 
+
+### Website Homepage
+![](bobatea_homepage)
+
 ### References
 1. United States Environmental Protection Agency | US EPA (https://www.epa.gov).
 2. Air Quality System (AQS) API (https://aqs.epa.gov/aqsweb/documents/data_api.html)
