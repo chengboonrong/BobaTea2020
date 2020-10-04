@@ -20,6 +20,10 @@
         <!-- d3.js map -->
         <link rel="stylesheet" href="css/map.css" />
 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <link rel="stylesheet" href="style.css">
+
     </head>
 
     <body>
@@ -58,7 +62,18 @@
 
         <main>
 
-            <!--Weather--> 
+            <!--Weather-->
+            <div class="weather-container">
+                <div class="weather-background" style="height: 30vh;">
+                    <img src="img/weather_background.svg">
+                </div>
+                <div class="weather-box">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/3d14101d69/kuala-lumpur/" data-label_1="KUALA LUMPUR" data-label_2="WEATHER" data-font="Verdana" data-days="5" data-textcolor="#ffffff" >KUALA LUMPUR WEATHER</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
+                </div>
+            </div>
 
             <h1>Bobatea can help &#128526</h1>
 
