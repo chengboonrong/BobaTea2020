@@ -88,9 +88,9 @@ main {
     margin: 0 1rem;
 }
   
-.nav-item:last-child {
+/* .nav-item:last-child {
     margin-top: auto;
-}
+} */
 
 .link-text {
     display: none;
