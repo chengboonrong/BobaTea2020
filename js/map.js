@@ -1,6 +1,7 @@
 //Width and height of map
- var width = 960;
- var height = 500;
+ var width = window.innerWidth //960;
+ var height = window.innerHeight //500;
+
 
  // D3 Projection
  var projection = d3.geo.albersUsa()
