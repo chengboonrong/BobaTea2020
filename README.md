@@ -22,7 +22,11 @@ aws s3 cp s3://impact-datashare/pm2.5-labeled <directory_path-to-save> --recursi
 ![d3MAP](https://github.com/YuLiangGoh/BobaTea2020/blob/main/d3map.png)
 
 ### References
-1. United States Environmental Protection Agency | US EPA (https://www.epa.gov).
-2. Air Quality System (AQS) API (https://aqs.epa.gov/aqsweb/documents/data_api.html)
-3. Pre-Labeled Datasets for Air Quality Data (https://github.com/nasa/spaceapps-phenomena_detection/tree/dev/data/labeled)
-4. World's Air Pollution: Real-time Air Quality Index (https://waqi.info/)
+1. Air Quality System (AQS) API (https://aqs.epa.gov/aqsweb/documents/data_api.html)
+2. Air Quality Index Scale and Color Legend (https://aqicn.org/scale/)
+3. Basic US State Map - D3.js (http://bl.ocks.org/michellechandra/0b2ce4923dc9b5809922)
+4. GOES-R Series Satellites - National Climatic Data Center (https://www.ncdc.noaa.gov/data-access/satellite-data/goes-r-series-satellites)
+5. High-Resolution Rapid Refresh (HRRR) (https://rapidrefresh.noaa.gov/hrrr/)
+6. Pre-Labeled Datasets for Air Quality Data (https://github.com/nasa/spaceapps-phenomena_detection/tree/dev/data/labeled)
+7. United States Environmental Protection Agency | US EPA (https://www.epa.gov)
+8. World's Air Pollution: Real-time Air Quality Index (https://waqi.info/) 
