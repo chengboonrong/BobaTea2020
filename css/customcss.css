@@ -121,6 +121,39 @@ main {
     border-bottom-right-radius: 10px;
 }
 
+.content{
+    margin-top: 1rem;
+}
+
+.About-us {
+    float: left;
+    width: 74%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.blank-space {
+    float: left;
+    width: 1%;
+}
+
+.Aside {
+    float: left;
+    width: 25%;
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.content:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /* small screen*/
 @media only screen and (max-width: 600px){
@@ -156,6 +189,11 @@ main {
 
     .weather-container img {
         width: 25rem;
+    }
+
+    .About-us, .Aside {
+        width: 100%;
+        height: auto;
     }
 
 }
