@@ -31,11 +31,11 @@
 			 .style("opacity", 0);
 
  // Load in my states data!
- d3.csv("new_new_PM2.5_dataset.csv", function(data) {
+ d3.csv("https://chengboonrong.github.io/BobaTea2020/latest_PM2.5_dataset.csv", function(data) {
 	 color.domain([0,1,2,3,4,5]); // setting the range of the input data
 
 	 // Load GeoJSON data and merge with states data
-	 d3.json("us-states.json", function(json) {
+	 d3.json("https://chengboonrong.github.io/BobaTea2020/us-states.json", function(json) {
 
 		 // Loop through each state data value in the .csv file
 		 for (var i = 0; i < data.length; i++) {
@@ -54,7 +54,7 @@
 
 				 // Copy the data value into the JSON
 				 json.features[j].properties.predicted_air_pollution_level = dataValue;
-				 json.features[j].properties.air_data_value = data[i].air_data_value;
+				 json.features[j].properties.AAPL = data[i].AAPL;
 
 
 				 // Stop looking through the JSON
@@ -86,15 +86,15 @@
 	  })
 	  	.on("mouseover", function(d) {
 			 var stateName = d.properties.name;
-			 var airDataValue = d.properties.air_data_value;
-			 if (!airDataValue) {
+			 var airDataValue = `AQI: ${d.properties.AAPL}`;
+			 if (!d.properties.AAPL) {
 				 airDataValue = 'No records.'
 			 }
 			 // console.log(d.properties)
 			 div.transition()        
 			 .duration(200)      
 			 .style("opacity", .5);
-			 div.text(`${stateName} ${airDataValue}`)
+			 div.text(`${stateName}  ${airDataValue}`)
 			 .style("left", (d3.event.pageX) + "px")     
 			 .style("top", (d3.event.pageY - 28) + "px");    
 		 })
