@@ -31,11 +31,11 @@
 			 .style("opacity", 0);
 
  // Load in my states data!
- d3.csv("latest_PM2.5_dataset.csv", function(data) {
+ d3.csv("http://chengboonrong.github.io/BobaTea2020/latest_PM2.5_dataset.csv", function(data) {
 	 color.domain([0,1,2,3,4,5]); // setting the range of the input data
 
 	 // Load GeoJSON data and merge with states data
-	 d3.json("us-states.json", function(json) {
+	 d3.json("http://chengboonrong.github.io/BobaTea2020/us-states.json", function(json) {
 
 		 // Loop through each state data value in the .csv file
 		 for (var i = 0; i < data.length; i++) {
