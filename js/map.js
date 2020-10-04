@@ -84,7 +84,7 @@
 				 return "rgb(200,200,200)";
 			 }
 	  })
-	  .on("mouseover", function(d) {
+	  	.on("mouseover", function(d) {
 			 var stateName = d.properties.name;
 			 var airDataValue = d.properties.air_data_value;
 			 if (!airDataValue) {
@@ -97,30 +97,13 @@
 			 div.text(`${stateName} ${airDataValue}`)
 			 .style("left", (d3.event.pageX) + "px")     
 			 .style("top", (d3.event.pageY - 28) + "px");    
-		 });
-
- d3.csv("stateslived.csv", function(data) {
-	 svg.selectAll("circle")
-		 .data(data)
-		 .enter()
-		 .append("circle")
-		 .on("mouseover", function(d) {   
-			 // console.log(d.state)   
-			 div.transition()        
-			 .duration(200)      
-			 .style("opacity", .9);      
-			 div.text(d.state)
-			 .style("left", (d3.event.pageX) + "px")     
-			 .style("top", (d3.event.pageY - 28) + "px");    
-		 })   
-
-		 // fade out tooltip on mouse out               
-		 .on("mouseout", function(d) {       
-			 div.transition()        
-			 .duration(500)      
-			 .style("opacity", 0);   
-		 });
-	 });
+		 })
+		// fade out tooltip on mouse out               
+		.on("mouseout", function(d) {       
+		div.transition()        
+			.duration(500)      
+			.style("opacity", 0);   
+	});
 
 	 // Modified Legend Code from Mike Bostock: http://bl.ocks.org/mbostock/3888852
 	 var legend = d3.select("body").append("svg")
