@@ -32,6 +32,7 @@ main {
 }
 
 .navbar {
+    z-index: 500;
     width: 5rem;
     height: 100vh;
     position: fixed;
@@ -158,10 +159,6 @@ main {
     }
 
 }
-
-@media (hover: none) {
-    a:hover { color: inherit; }
-  }
 
 /* large screen*/
 @media only screen and (min-width: 600px){
