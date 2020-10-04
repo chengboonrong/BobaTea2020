@@ -110,7 +110,7 @@
 	 var legend = d3.select("body").append("svg")
 					 .attr("class", "legend")
 					 .attr("width", 500)
-					 .attr("height", 250)
+					 .attr("height", 200)
 					 .selectAll("g")
 					 .data(color.domain().slice())
 					 .enter()
