@@ -108,7 +108,7 @@
 	 // Modified Legend Code from Mike Bostock: http://bl.ocks.org/mbostock/3888852
 	 var legend = d3.select("body").append("svg")
 					 .attr("class", "legend")
-					 .attr("width", 250)
+					 .attr("width", 300)
 					 .attr("height", 250)
 					 .selectAll("g")
 					 .data(color.domain().slice())
