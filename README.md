@@ -18,7 +18,7 @@ aws s3 cp s3://impact-datashare/pm2.5-labeled <directory_path-to-save> --recursi
 
 
 
-### U.S. States Map - D3
+### U.S. States Map - D3.js
 ![d3MAP](https://github.com/YuLiangGoh/BobaTea2020/blob/main/d3map.png)
 
 ### References
